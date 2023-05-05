@@ -21,7 +21,7 @@ function addTask(){
         li.append(span);
     }
     inputbox.value="";
-    saveData();
+    // saveData();
 }
 
 listcontainer.addEventListener("dblclick", function(e){
@@ -38,11 +38,13 @@ listcontainer.addEventListener("dblclick", function(e){
         elements.forEach((el) => {
             locCount = e.target.id
             for(let i = locCount+1;i < elements.length;i++){
-                elements[i].id = i
+                if(elements){
+                    elements[i].id = i
+                }
             }
         })
 
-        saveData()
+        // saveData()
         // e.target.id=coun t--;
     // }
 });
@@ -62,4 +64,4 @@ function showTask(){
     listcontainer.innerHTML = JSON.parse(localStorage.getItem("data"))
 }
 
-showTask();
+// showTask();
