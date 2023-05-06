@@ -9,6 +9,8 @@
 h2{
     justify-content: center;
     left: 45%;
+    color: rgba(0, 7, 101, 0.567) ;
+    font-size: 25px;
 }
 .container{
     width: 100%;
@@ -23,10 +25,11 @@ h2{
     background: whitesmoke;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
+
 }
 
 .todo-web h2{
-    color: rgb(0,0,255);
+    /* color: rgb(0,0,255); */
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -40,6 +43,14 @@ h2{
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
+}
+
+
+
+select{
+    color: rgba(0, 7, 101, 0.567);
+    margin-left: 25%;
+    display: inline-block;
 }
 
 input{
@@ -70,8 +81,28 @@ ul li{
     user-select: none;
     cursor: pointer;
     position: relative;
+    display: flex;
+    /* justify-content: space-between; */
+
 }
 
+#date{
+      
+}
+
+
+.filter{
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    visibility: hidden; 
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
 
 ul li span{
     position: absolute;

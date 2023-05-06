@@ -17,8 +17,16 @@
                 <input type="text" id="input-box" placeholder="Write your task here...">
                 <button onclick="addTask()" type="submit">Add</button>
             </div>
-        
+            <!-- <div>fnm</div> -->
+            
+            <input type="date" style="color:rgba(0, 7, 101, 0.567)" id="date">
+            <select id="filter" onchange="changeFilter()">
+                <option value="All">All
+                <option value="Today">Today
+
+            </select>
           <ul id="list-container">
+            
                 <!--  <li class="checked">Task 1</li>
                 <li>Task 2</li>
                 <li>Task 3</li>-->
