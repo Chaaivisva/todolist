@@ -63,10 +63,6 @@ async function addTask(){
         span.addEventListener("click",addClickEvent)
         li.append(span);
 
-        let seperate = document.createElement("span")
-        seperate.innerHTML = "seperate"
-        seperate.classList.add("hide")
-        listcontainer.append(seperate)
         saveData()
 
     }
