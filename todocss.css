@@ -45,7 +45,11 @@ h2{
     margin-bottom: 25px;
 }
 
-
+.hide{
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
 
 select{
     color: rgba(0, 7, 101, 0.567);

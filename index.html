@@ -13,23 +13,27 @@
         <div class="container">
            <div class="todo-web">
             <h2>TO-DO LIST</h2>
+            <!-- <form> -->
+
             <div class="row">
-                <input type="text" id="input-box" placeholder="Write your task here...">
+                <input type="text" id="input-box" name="todo" value="" placeholder="Write your task here...">
                 <button onclick="addTask()" type="submit">Add</button>
             </div>
+
             <!-- <div>fnm</div> -->
             
-            <input type="date" style="color:rgba(0, 7, 101, 0.567)" id="date">
-            <select id="filter" onchange="changeFilter()">
+            <input type="date" style="color:rgba(0, 7, 101, 0.567)" id="date" name="date" >
+            <select id="filter" onchange="changeFilter()" name="category">
                 <option value="All">All
                 <option value="Today">Today
 
             </select>
+
+        <!-- </form> -->
+
           <ul id="list-container">
             
-                <!--  <li class="checked">Task 1</li>
-                <li>Task 2</li>
-                <li>Task 3</li>-->
+               
                </ul>
            </div>
         </div>
